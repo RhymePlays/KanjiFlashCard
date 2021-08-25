@@ -1,0 +1,119 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100%;
+}
+
+/*Sides*/
+
+#leftSide{
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+#rightSide{
+    background: #ececec;
+    width: 100%;
+    height: 100%;
+}
+
+/* Cards */
+
+.card{
+    background: #151515;
+    height: 210px;
+    width: 50%;
+    position: relative;
+    box-shadow: inset 0 0 0 2px white;
+}
+.kanjiDisplay{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgb(244, 248, 255);
+    text-shadow: 0px 0px 20px #1badff;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 150px;
+    font-weight: 800;
+}
+.radicalMark{
+    display: none;
+    position: absolute;
+    left: 120px;
+    top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #efd5dd;
+    text-shadow: 0px 0px 18px #fb1e46;
+}
+.kanjiMeaning{
+    position: absolute;
+    left: 210px;
+    right: 205px;
+    top: 15px;
+    color: rgb(249,249,249);
+    background: rgb(249,249,249);
+    background: linear-gradient(180deg, rgba(249,249,249,1) 0%, rgba(220,220,220,1) 100%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.onSpelling{
+    position: absolute;
+    left: 210px;
+    bottom: 15px;
+    color: #d5e5ef;
+    font-family: "Montserrat", "M PLUS 1p", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0px 0px 18px #1badff;
+}
+.kunVsOn{
+    position: absolute;
+    left: 210px;
+    bottom: 43px;
+    width: 100px;
+    border: solid white 2px;
+}
+.kunSpelling{
+    position: absolute;
+    left: 210px;
+    bottom: 55px;
+    color: #efd5dd;
+    font-family: "Montserrat", "M PLUS 1p", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0px 0px 18px #fb1e46;
+}
+.qrDisplay{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 0px 15px #fb1e46);
+}
+.qrDisplay svg{
+    width: 100%;
+    height: 100%;
+}
